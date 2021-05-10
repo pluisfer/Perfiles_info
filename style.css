@@ -27,13 +27,19 @@ body{
 }
 /* Fin de conteiner principal */
 
-/* Imagenes de perfil */
-img{
+.tarjeta{
+    border-radius: 50%;
     width: 80px;
     height: 80px;
+}
+
+/* Imagenes de perfil */
+img{
+    width: inherit;
+    height: inherit;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 300ms ease-out;
+    transition: all 100ms ease-out;
 }
 
 img:hover{
@@ -42,8 +48,9 @@ img:hover{
 }
 /* Fin de imagenes de perfil */
 
+
 /* Caja de perfiles */
-.caja-targetas{
+.caja-tarjetas{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
     justify-items: center;
@@ -61,6 +68,7 @@ img:hover{
     color: #fff;
     border-radius: 10px;
     padding: 1.5rem;
+    transition: all 200ms ease;
 }
 
 /* nombre de perfil */
@@ -109,7 +117,7 @@ img:hover{
         max-width: 700px;
         width: 100%;
     }
-    .caja-targetas{
+    .caja-tarjetas{
         grid-template-columns: repeat(5,1fr);
     }
 }
